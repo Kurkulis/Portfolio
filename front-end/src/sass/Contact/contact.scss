@@ -1,0 +1,168 @@
+.contact-page {
+  background: #ddd;
+  min-height: 100vh;
+  padding: 40px 0;
+  .contact-heading {
+    text-align: center;
+    color: #000000;
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 40px;
+  }
+  .contact-subheading {
+    text-align: center;
+    color: #ffffff;
+    font-size: 1.2rem;
+    margin-bottom: 40px;;
+  }
+  .contact-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  .contact-left, .contact-right {
+    background: #555;
+    color: #fff;
+    padding: 32px 24px;
+    border-radius: 2px;
+    flex: 1 1 0;
+    min-width: 340px;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+  .contact-left h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 16px;
+  }
+  .contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+  .contact-block {
+    background: #f8f9fa;
+    color: #222;
+    border-radius: 8px;
+    padding: 20px 24px;
+    margin-bottom: 16px;
+    border: 1px solid #e9ecef;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    .contact-label {
+      color: #495057;
+      font-weight: 600;
+      font-size: 1.1rem;
+      display: block;
+      margin-bottom: 8px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+    .contact-value.email, .contact-value.phone {
+      color: #212529;
+      font-weight: 600;
+      font-size: 1.1rem;
+      
+    }
+    .contact-socials {
+      display: flex;
+      gap: 12px;
+      margin-top: 8px;
+      .contact-social-link {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 45px;
+        height: 45px;
+        background: #007bff;
+        border-radius: 50%;
+        color: #fff;
+        font-size: 1.3rem;
+        text-decoration: none;
+        transition: all 0.3s ease;
+        box-shadow: 0 2px 8px rgba(0, 123, 255, 0.3);
+        &:hover {
+          background: #0056b3;
+          transform: translateY(-2px);
+          box-shadow: 0 4px 12px rgba(0, 123, 255, 0.4);
+        }
+      }
+    }
+  }
+  .contact-right h3 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 16px;
+  }
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    .form-group {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+      label {
+        font-weight: bold;
+        font-size: 1rem;
+        color: #fff;
+      }
+      input, textarea {
+        background: #ddd;
+        border: none;
+        border-radius: 2px;
+        padding: 8px 12px;
+        font-size: 1rem;
+        color: #222;
+        resize: none;
+      }
+      textarea {
+        min-height: 60px;
+      }
+    }
+    .contact-send-btn {
+      margin: 0 auto;
+      background: #7d89fa;
+      color: #fff;
+      border: none;
+      border-radius: 2px;
+      padding: 10px 40px;
+      font-size: 1.1rem;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background 0.2s;
+      &:hover {
+        background: #5a63c7;
+      }
+    }
+  }
+}
+
+// Add animation styles
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-in {
+  animation: fadeInUp 0.8s ease forwards;
+}
+
+.contact-heading,
+.contact-subheading {
+  opacity: 0; // Start invisible
+}
+
+.contact-heading.animate-in,
+.contact-subheading.animate-in {
+  opacity: 1; // Will be handled by animation
+}

@@ -1,0 +1,316 @@
+// === HOME RESPONSIVE STYLES ===
+
+.home-hero {
+  position: relative;
+  overflow: hidden;
+
+  // Light overlay for better text readability
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.2);
+    pointer-events: none;
+    z-index: 1;
+  }
+
+  // Ensure background image is preserved on mobile
+  @media (max-width: 768px) {
+    background-attachment: scroll; // Fixed attachment can cause issues on mobile
+  }
+}
+
+// === TEXT ANIMATIONS ===
+.home-text {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s ease;
+  position: relative;
+  z-index: 2;
+
+  &.animate-in {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  // Mobile and small tablets (up to 780px)
+  @media (max-width: 780px) {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+  }
+  
+  // Medium breakpoint (781px - 1199px): text below image
+  @media (min-width: 781px) and (max-width: 1199px) {
+    text-align: center;
+    margin-top: 2rem;
+  }
+  
+  // XL breakpoint (1200px+): text on left side
+  @media (min-width: 1200px) {
+    text-align: left;
+  }
+}
+
+// === TYPOGRAPHY ===
+.home-title {
+  color: #fff !important; // White text for better contrast with background image
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7) !important; // Better text shadow
+
+  @media (max-width: 768px) {
+    font-size: 2.5rem !important;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 2rem !important;
+  }
+}
+
+.last-name {
+  color: #0d6efd !important; // White text for better contrast with background image
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7) !important; // Better text shadow
+
+  @media (max-width: 768px) {
+    font-size: calc(2.5rem * 1.2) !important; // 20% larger than main name
+  }
+
+  @media (max-width: 480px) {
+    font-size: calc(2rem * 1.2) !important; // 20% larger than main name
+  }
+}
+
+
+
+.home-subtitle {
+  @media (max-width: 768px) {
+    font-size: 1.1rem !important;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 1rem !important;
+  }
+}
+
+.home-greeting {
+  animation: bounce 2s infinite;
+
+  @media (max-width: 768px) {
+    font-size: 0.9rem;
+  }
+}
+
+@keyframes bounce {
+
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+
+  40% {
+    transform: translateY(-10px);
+  }
+
+  60% {
+    transform: translateY(-5px);
+  }
+}
+
+// === NAVIGATION ===
+.home-nav {
+  .btn {
+    transition: all 0.3s ease;
+
+    &:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    @media (max-width: 780px) {
+      font-size: 0.85rem;
+      padding: 0.4rem 0.8rem;
+    }
+  }
+  
+  // Center navigation for mobile and small tablets
+  @media (max-width: 780px) {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+}
+
+// === SOCIAL LINKS ===
+.home-socials {
+  // Center social links for mobile and small tablets
+  @media (max-width: 780px) {
+    justify-content: center !important;
+    width: 100%;
+  }
+}
+
+.home-social-link {
+  transition: all 0.3s ease;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &:hover {
+    transform: translateY(-5px) rotate(5deg);
+    box-shadow: 0 8px 15px rgba(0, 123, 255, 0.3);
+  }
+
+  @media (max-width: 780px) {
+    width: 45px;
+    height: 45px;
+
+    i {
+      font-size: 1.1rem !important;
+    }
+  }
+
+  @media (max-width: 480px) {
+    width: 40px;
+    height: 40px;
+
+    i {
+      font-size: 1rem !important;
+    }
+  }
+}
+
+// === CTA BUTTONS ===
+.home-cta {
+  .btn {
+    transition: all 0.3s ease;
+    font-weight: 600;
+
+    &:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+    }
+
+    @media (max-width: 768px) {
+      font-size: 1rem;
+      padding: 0.75rem 1.5rem !important;
+    }
+
+    @media (max-width: 480px) {
+      font-size: 0.9rem;
+      padding: 0.6rem 1.2rem !important;
+    }
+  }
+}
+
+// === PROFILE PHOTO ===
+.profile-photo-container {
+  display: inline-block;
+
+  .profile-photo-bg {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    right: -20px;
+    bottom: -20px;
+    background: linear-gradient(135deg, #007bff, #0056b3);
+    border-radius: 50%;
+    z-index: -1;
+    opacity: 0.1;
+  }
+}
+
+.profile-photo {
+  transition: all 0.5s ease;
+  position: relative;
+  z-index: 1;
+
+  &:hover {
+
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2) !important;
+  }
+}
+
+// Responsive image klasės naudojamos tik kaip identifikatoriai
+// Tikrasis dydis kontroliuojamas per .home-image konteinerį
+.home-hero .home-image {
+
+  .desktop-image,
+  .mobile-image {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover;
+  }
+  
+  // Mobile and small tablets (up to 780px)
+  @media (max-width: 780px) {
+    width: 300px;
+    height: 360px;
+    margin: 0 auto 2rem auto;
+    display: flex;
+    justify-content: center;
+  }
+  
+  // Medium breakpoint (781px - 1199px): text below image
+  @media (min-width: 781px) and (max-width: 1199px) {
+    width: 400px;
+    height: 480px;
+    margin: 0 auto 2rem auto;
+  }
+  
+  @media (min-width: 1200px) {
+    width: 500px;
+    height: 600px;
+  }
+}
+
+// === RESPONSIVE ADJUSTMENTS ===
+@media (max-width: 780px) {
+  .home-hero {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    
+    .container-fluid {
+      padding-left: 1rem !important;
+      padding-right: 1rem !important;
+    }
+    
+    .row {
+      margin: 0;
+      justify-content: center;
+    }
+  }
+}
+
+// === DARK MODE SUPPORT ===
+@media (prefers-color-scheme: dark) {
+  .home-hero {
+
+    // Keep the background image but add a darker overlay
+    &::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.3);
+      pointer-events: none;
+      z-index: 1;
+    }
+  }
+
+  .home-title {
+    color: #fff !important; // Keep white text in dark mode too
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8) !important;
+  }
+}
