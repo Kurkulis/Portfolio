@@ -6,6 +6,8 @@
 
 Tai yra portfolio svetainė, sukurta su React ir TypeScript frontend'ui, bei Node.js/Express backend'ui. Portfolio demonstruoja profesionalų darbą, įgūdžius ir suteikia kontaktų sistemą. Projektas apima adaptyvų dizainą su Bootstrap, pasirinktinį stilių su SASS ir patikimą backend API kontaktų formoms bei kitam dinamiškam turiniui valdyti.
 
+Svetainė šiuo metu yra įdiegta ir veikia kurkulis.lt domene. Projekto frontend dalis yra hostinama Hostinger platformoje. Tuo tarpu backend dalis, kuri apdoroja kontaktų formos užklausas ir siunčia el. laiškus, yra talpinama Railway.app debesų paslaugoje.
+
 # Projekto Struktūra ir Aprašymas
 
 ## Struktūra:
@@ -178,7 +180,7 @@ cd server
 
 npm install
 
-3. Sukurkite .env failą su reikalingais aplinkos kintamaisiais:
+2. Sukurkite .env failą su reikalingais aplinkos kintamaisiais:
 
 - MONGODB_URI=jūsų_mongodb_prisijungimo_eilutė
 - EMAIL_USER=jūsų_el_pašto_adresas
@@ -186,7 +188,7 @@ npm install
 - NOTIFY_EMAIL=jūsų_el_pašto_adresas
 - PORT=5000
 
-4. Paleiskite serverį:
+3. Paleiskite serverį:
 
 npm start
 
@@ -201,8 +203,11 @@ cd front-end
 
 npm install
 
+3. Sukurkite .env failą su reikalingais aplinkos kintamaisiais:
 
-3. Paleiskite plėtojimo serverį:
+- VITE_API_URL=jūsų_api_prisijungimo_eilutė
+
+4. Paleiskite serverį:
 
 npm run dev    
 
