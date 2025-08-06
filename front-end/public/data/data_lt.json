@@ -1,0 +1,365 @@
+{
+    "navigation": {
+        "title": "Ignas Kurkulis",
+        "navigationItems": [
+            "Pradžia",
+            "Apie",
+            "Projektai",
+            "Kontaktai"
+        ]
+    },
+    "home": {
+        "greeting": "Sveiki! 👋",
+        "name": "Esu Ignas",
+        "lastName": "Kurkulis",
+        "title": "Programuotojas iš Vilniaus.",
+        "navItems": [
+            {
+                "label": "Pradžia",
+                "active": true
+            },
+            {
+                "label": "Apie",
+                "active": false
+            },
+            {
+                "label": "Projektai",
+                "active": false
+            },
+            {
+                "label": "Kontaktai",
+                "active": false
+            }
+        ],
+        "socialIcons": [
+            {
+                "name": "github",
+                "url": "https://github.com/Kurkulis",
+                "icon": "fa-github"
+            },
+            {
+                "name": "linkedin",
+                "url": "https://www.linkedin.com/in/kurkulisignas/",
+                "icon": "fa-linkedin"
+            },
+            {
+                "name": "facebook",
+                "url": "https://www.facebook.com/KurkulisIgnas",
+                "icon": "fa-facebook"
+            },
+            {
+                "name": "instagram",
+                "url": "https://www.instagram.com/ignaskurkulis/",
+                "icon": "fa-instagram"
+            }
+        ],
+        "photo": "Facetune_29-01-2023-12-29-47.JPEG"
+    },
+    "aboutMe": {
+        "name": "Apie mane",
+        "photo": "IKabout.JPEG",
+        "description": [
+            "Esu Ignas Kurkulis – motyvuotas ir smalsus žmogus, kaupiantis savo patirtį įvairiose srityse – nuo savanorystės jaunimo bendruomenėms ir tarnybos kariuomenėje iki verslo vadybos, aviacijos įmonių veiklos organizavimo ir, svarbiausia, programavimo.",
+            "Mokyklos metais aktyviai dalyvavau jaunimo organizacijos „Apskritasis stalas“ veikloje – koordinavau stovyklas, padėjau organizuoti miesto šventes bei jose planuojamas veiklas jauniems žmonėms ir užsiėmiau renginių vedimu.",
+            "Po mokyklos baigimo, atlikau 9 mėnesių savanoriškąją karo tarnybą Lietuvos kariuomenėje Kunigaikščio Vaidoto pėstininkų batalione. Tarnybos metu pavyko paaukštinti karinį laipsnį už efektyviai ir atsakingai vykdytas pareigas. ",
+            "Atlikus minėtą savanoriškąją tarnybą įstojau į Vilniaus universiteto Verslo mokyklą. Pasirinkau studijuoti tarptautinio verslo studijas, o jų metu atlikau praktiką „Heston Airlines“ žmogiškųjų išteklių departamente. Be to, bestudijuojant aviacijos industrijoje 3 metus dirbau įgulų koordinatoriumi ir įgijau vertingos patirties. Svarbiausia jų -  susipažinau su vidiniais aviacijos veiklos procesais.",
+            "Baigęs studijas pradėjau aktyviai domėtis IT sritimi ir pasirinkau gilintis į Full-Stack programavimą. Šiuo metu mokausi Vilnius Coding School JavaScript Full-Stack ilgalaikiuose kursuose. Pastarieji mokymai puiki įžanga į programavimo industriją, o tolimesnis žingsnis -žinių gilinimas, mokymasis bei savęs išbandymas asmeniniuose IT projektuose. ",
+            "Siekiu ir nekantrauju tobulinti savo įgūdžius dinamiškoje ir iššūkių kupinoje aplinkoje. Garantuoju entuziazmą darbe ir projektų įgyvendinimą su neišmatuojamomis pastangomis, todėl pažadu visuomet maksimaliai įsitraukti į kiekvieną projektą ir tobulėti kaip profesionalas."
+        ],
+        "hobbiesTitle": "Mano hobiai",
+        "hobbies": [
+            "Slidinėjimas",
+            "Keliavimas",
+            "Programavimas",
+            "Skaitymas",
+            "Tinklinis"
+        ],
+        "educationTitle": "Mano išsilavinimas",
+        "education": [
+            {
+                "institution": "Utenos Adolfo Šapokos gimnazija",
+                "degree": "Vidurinis išsilavinimas",
+                "startDate": 2015,
+                "endDate": 2019
+            },
+            {
+                "institution": "Vilniaus universitetas, Verslo mokykla",
+                "degree": "Verslo vadybos bakalauro laipsnis",
+                "startDate": 2020,
+                "endDate": 2024,
+                "description": "Baigiau Tarptautinio verslo bakalauro studijas, kuriose įgijau tvirtus verslo valdymo, rinkodaros, finansų bei tarptautinės rinkos analizės pagrindus. Programoje akcentuotas projektinis ir problemų sprendimu grįstas mokymas."
+            },
+            {
+                "institution": "Vilniaus Coding School",
+                "degree": "Ilgalaikiai JavaScript Full-Stack kursai",
+                "startDate": "2024 spalis",
+                "endDate": "2025 rugpjūtis",
+                "description": "Baigiau Full-Stack programavimo kursus, kuriuose įgijau praktinius web aplikacijų kūrimo įgūdžius su HTML, CSS, JavaScript, React, Node.js ir kt. Gebu kurti ir integruoti front-end bei back-end dalis, valdyti API, dirbti su duomenų bazėmis ir diegti projektus į serverius."
+            }
+        ],
+        "workExperiencetitle": "Mano darbo patirtis",
+        "workExperience": {
+            "mainJobs": [
+                {
+                    "position": "\"Heston Airlines\" vyresnysis įgulų koordinatorius",
+                    "time": "2022 gegužė – 2025 birželis",
+                    "description": [
+                        {
+                            "name": "Uždaviniai ir atsakomybės",
+                            "descInfo": "Skrydžių įgulų grafiko iki 72 valandų į priekį stebėjimas ir koordinavimas, poilsio ir darbo laiko režimo reglamentų laikymosi užtikrinimas. Operatyviai įgulų grafikų koregavimas dėl skrydžių vėlavimų, skraidančių darbuotojų nedarbingumų ar kitų netikėtų veiklos pokyčių, kad būtų užtikrintas sklandus skrydžių procesas."
+                        },
+                        {
+                            "name": "Įgyti įgūdžiai ir žinios",
+                            "descInfo": "Stiprinau problemų sprendimo ir sprendimų priėmimo gebėjimus dirbdamas dinamiškoje aviacijos industrijos aplinkoje. Įgijau žinių apie įgulų valdymo sistemas ir tarptautinius aviacijos reglamentus, kurie pagerino mano planavimo ir komunikacijos įgūdžius."
+                        }
+                    ]
+                },
+                {
+                    "position": "\"California Tapas & Wine\" barmenas - padavėjas",
+                    "time": "2021 birželis – 2022 balandis",
+                    "description": [
+                        {
+                            "name": "Uždaviniai ir atsakomybės",
+                            "descInfo": "Aukšto lygio klientų patirties užtikrinimas restorano ir baro erdvėse, kuriant malonią ir svetingą aplinką. Efektyvus užsakymų valdymas bei darbo procesų organizavimas, siekiant sklandaus aptarnavimo ir kokybės standartų laikymosi."
+                        },
+                        {
+                            "name": "Įgyti įgūdžiai ir žinios",
+                            "descInfo": "Išmokau efektyviai dirbti greito tempo aplinkoje skirdamas dėmesį aukštos kokybės aptarnavimui bei profesionaliam bendravimui. Sustiprinau komandinio darbo, konfliktų sprendimo ir situacijų valdymo įgūdžius"
+                        }
+                    ]
+                }
+            ],
+            "otherJobsTitle": "Kita darbo patirtis",
+            "otherJobs": [
+                "„Consilia“ – Pagalbinis darbuotojas renginių techninei komandai. Renginių infrastruktūros (scenos, apšvietimo, garso įrangos) montavimas ir demontavimas. Bendradarbiavimas su technikų komanda, kad renginiai būtų paruošti laiku ir sklandžiai.",
+                "„S&J projektai“ – Statyba ir dailidė. Dalyvavimas įvairiuose statybų projektuose, dailidės darbų atlikimas, karkasų statymas. Praktinė patirtis dirbant su statybos ir medžio apdirbimo įrankiais bei medžiagomis, užtikrinant darbo saugos standartų laikymąsi.",
+                "„Utenos mėsa“ – Sandėlio darbuotojas. Produktų ženklinimo darbai gamybos linijoje, etikečių ir lipdukų klijavimas ant pakuočių. Užtikrintas darbo operatyvumas, tikslumas ir griežtas higienos bei kokybės standartų laikymasis maisto gamybos procese."
+            ]
+        },
+        "technologiesTitle": "Mano technologijos ir įrankiai",
+        "technologies": {
+            "tech1Name": "Front-end",
+            "frontend": [
+                {
+                    "name": "HTML",
+                    "icon": "bi-filetype-html"
+                },
+                {
+                    "name": "CSS",
+                    "icon": "bi-filetype-css"
+                },
+                {
+                    "name": "JavaScript",
+                    "icon": "bi-filetype-js"
+                },
+                {
+                    "name": "TypeScript",
+                    "icon": "bi-braces"
+                },
+                {
+                    "name": "React",
+                    "icon": "bi-lightning-charge"
+                },
+                {
+                    "name": "Redux",
+                    "icon": "bi-arrow-repeat"
+                },
+                {
+                    "name": "SASS",
+                    "icon": "bi-palette"
+                },
+                {
+                    "name": "Bootstrap",
+                    "icon": "bi-bootstrap"
+                }
+            ],
+            "tech2Name": "Back-end",
+            "backend": [
+                {
+                    "name": "Node.js",
+                    "icon": "bi-cpu"
+                },
+                {
+                    "name": "Express",
+                    "icon": "bi-diagram-3"
+                },
+                {
+                    "name": "MongoDB",
+                    "icon": "bi-database"
+                },
+                {
+                    "name": "Mongoose",
+                    "icon": "bi-link-45deg"
+                },
+                {
+                    "name": "REST API",
+                    "icon": "bi-plug"
+                },
+                {
+                    "name": "JWT",
+                    "icon": "bi-shield-check"
+                }
+            ],
+            "toolsName": "Papildomi įrankiai",
+            "tools": [
+                {
+                    "name": "Git",
+                    "icon": "bi-git"
+                },
+                {
+                    "name": "GitHub",
+                    "icon": "bi-github"
+                },
+                {
+                    "name": "Figma",
+                    "icon": "bi-vector-pen"
+                },
+                {
+                    "name": "Vite",
+                    "icon": "bi-lightning"
+                },
+                {
+                    "name": "VSCode",
+                    "icon": "bi-terminal"
+                },
+                {
+                    "name": "Postman",
+                    "icon": "bi-envelope-open"
+                },
+                {
+                    "name": "NPM",
+                    "icon": "bi-box"
+                },
+                {
+                    "name": "Webpack",
+                    "icon": "bi-gear"
+                }
+            ]
+        }
+    },
+    "projects": {
+        "title": "Mano darbai",
+        "subtitle": "Peržiūrėkite mano naujausius darbus ir kūrybinius projektus",
+        "look": "Peržiūrėti projektą",
+        "projectItems": [
+            {
+                "title": "Projektas Nr. 1",
+                "description": "Trumpas pirmojo projekto aprašymas.",
+                "technologies": [
+                    "HTML",
+                    "CSS",
+                    "JavaScript"
+                ],
+                "image": "project.jpg",
+                "link": "https://github.com/Kurkulis/project1"
+            },
+            {
+                "title": "Projektas Nr. 2",
+                "description": "Trumpas antrojo projekto aprašymas.",
+                "technologies": [
+                    "React",
+                    "Node.js",
+                    "MongoDB"
+                ],
+                "image": "project.jpg",
+                "link": "https://github.com/Kurkulis/project2"
+            },
+            {
+                "title": "Projektas Nr. 3",
+                "description": "Trumpas trečiojo projekto aprašymas.",
+                "technologies": [
+                    "React",
+                    "Node.js",
+                    "MongoDB"
+                ],
+                "image": "project.jpg",
+                "link": "https://github.com/Kurkulis/project2"
+            },
+            {
+                "title": "Projektas Nr. 4",
+                "description": "Trumpas ketvirtojo projekto aprašymas.",
+                "technologies": [
+                    "React",
+                    "Node.js",
+                    "MongoDB"
+                ],
+                "image": "project.jpg",
+                "link": "https://github.com/Kurkulis/project2"
+            }
+        ]
+    },
+    "contact": {
+        "heading": "Susisiekime",
+        "subheading": "Turite idėją ar klausimą? Susisiekite ir pakalbėkime.",
+        "left": {
+            "title": "Susisiekite su manimi",
+            "email": {
+                "label": "El. paštas",
+                "value": "ignas.kurkulis@gmail.com"
+            },
+            "phone": {
+                "label": "Telefono numeris",
+                "value": "+37061596536"
+            },
+            "social": {
+                "label": "Socialiniai tinklai",
+                "links": [
+                    {
+                        "name": "github",
+                        "url": "https://github.com/Kurkulis",
+                        "icon": "fa-github"
+                    },
+                    {
+                        "name": "linkedin",
+                        "url": "https://www.linkedin.com/in/kurkulisignas/",
+                        "icon": "fa-linkedin"
+                    },
+                    {
+                        "name": "facebook",
+                        "url": "https://www.facebook.com/KurkulisIgnas",
+                        "icon": "fa-facebook"
+                    },
+                    {
+                        "name": "instagram",
+                        "url": "https://www.instagram.com/ignaskurkulis/",
+                        "icon": "fa-instagram"
+                    }
+                ]
+            }
+        },
+        "right": {
+            "title": "Parašykite man žinutę",
+            "alertMessage": "Jūsų žinutė sėkmingai išsiųsta!",
+            "errorMessage": "Įvyko klaida siunčiant žinutę.",
+            "fields": [
+                {
+                    "name": "fullName",
+                    "label": "Vardas ir pavardė",
+                    "type": "text",
+                    "placeholder": "Įveskite savo vardą ir pavardę"
+                },
+                {
+                    "name": "email",
+                    "label": "El. paštas",
+                    "type": "email",
+                    "placeholder": "Įveskite savo el. paštą"
+                },
+                {
+                    "name": "subject",
+                    "label": "Tema",
+                    "type": "text",
+                    "placeholder": "Įveskite temos pavadinimą"
+                },
+                {
+                    "name": "message",
+                    "label": "Žinutė",
+                    "type": "textarea",
+                    "placeholder": "Įveskite savo žinutę"
+                }
+            ],
+            "button": {
+                "text": "SIŲSTI"
+            }
+        }
+    }
+}

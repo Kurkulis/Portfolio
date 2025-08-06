@@ -1,0 +1,365 @@
+{
+    "navigation": {
+        "title": "Ignas Kurkulis",
+        "navigationItems": [
+            "Home",
+            "About",
+            "Projects",
+            "Contact"
+        ]
+    },
+    "home": {
+        "greeting": "Hey, there! 👋",
+        "name": "I'm Ignas",
+        "lastName": "Kurkulis",
+        "title": "Developer from Vilnius.",
+        "navItems": [
+            {
+                "label": "Home",
+                "active": true
+            },
+            {
+                "label": "About",
+                "active": false
+            },
+            {
+                "label": "Projects",
+                "active": false
+            },
+            {
+                "label": "Contact",
+                "active": false
+            }
+        ],
+        "socialIcons": [
+            {
+                "name": "github",
+                "url": "https://github.com/Kurkulis",
+                "icon": "fa-github"
+            },
+            {
+                "name": "linkedin",
+                "url": "https://www.linkedin.com/in/kurkulisignas/",
+                "icon": "fa-linkedin"
+            },
+            {
+                "name": "facebook",
+                "url": "https://www.facebook.com/KurkulisIgnas",
+                "icon": "fa-facebook"
+            },
+            {
+                "name": "instagram",
+                "url": "https://www.instagram.com/ignaskurkulis/",
+                "icon": "fa-instagram"
+            }
+        ],
+        "photo": "Facetune_29-01-2023-12-29-47.JPEG"
+    },
+    "aboutMe": {
+        "photo": "IKabout.JPEG",
+        "name": "About me",
+        "description": [
+            "I am Ignas Kurkulis – a motivated and curious individual, building my experience across various fields – from volunteering for youth communities and serving in the military to business management, aviation company operations, and most importantly, programming.",
+            "During my school years, I was actively involved in the youth organization „Apskritasis stalas“, where I coordinated camps, helped organize city festivals, planned youth activities, and hosted various events.",
+            "After graduating from high school, I completed a 9-month voluntary military service in the Lithuanian Armed Forces, at the Duke Vaidotas Infantry Battalion. During my service, I was promoted in military rank for performing my duties effectively and responsibly.",
+            "Upon completing the mentioned voluntary service, I enrolled at Vilnius University Business School. I chose to study International Business, during which I completed an internship at the Human Resources Department of “Heston Airlines”. Additionally, while studying, I worked as a Crew Coordinator in the aviation industry for 3 years, where I gained valuable experience. The most important takeaway was getting to know the internal operational processes of the aviation sector.",
+            "After graduating, I started actively exploring the IT field and chose to focus on Full-Stack development. Currently, I am studying in the JavaScript Full-Stack long-term program at Vilnius Coding School. This training is a great introduction to the programming industry, and my next step is to deepen my knowledge, continue learning, and challenge myself in personal IT projects.",
+            "I am eager and aim to sharpen my skills in a dynamic and challenging environment. I guarantee enthusiasm in my work and relentless effort in delivering projects, ensuring my full commitment to every task while continuously growing as a professional."
+        ],
+        "hobbiesTitle": "My hobbies",
+        "hobbies": [
+            "Snowboarding",
+            "Traveling",
+            "Coding",
+            "Reading",
+            "Volleyball"
+        ],
+        "educationTitle": "My Education",
+        "education": [
+            {
+                "institution": "Utena Adolfas Šapoka Gymnasium",
+                "degree": "Secondary Education",
+                "startDate": 2015,
+                "endDate": 2019
+            },
+            {
+                "institution": "Vilnius University, Business School",
+                "degree": "Bachelor of Business Management",
+                "startDate": 2020,
+                "endDate": 2024,
+                "description": "I completed a Bachelor's degree in International Business, where I gained a solid foundation in business management, marketing, finance, and international market analysis. The program emphasized project-based learning and problem-solving approaches."
+            },
+            {
+                "institution": "Vilnius Coding School",
+                "degree": "Long-Term JavaScript Full-Stack Course",
+                "startDate": "2024 Oct",
+                "endDate": "2025 Aug",
+                "description": "I completed Full-Stack Web Development course, where I gained practical skills in building web applications using HTML, CSS, JavaScript, React, Node.js and more. I am proficient in developing and integrating front-end and back-end components, managing APIs, working with databases, and deploying projects to servers."
+            }
+        ],
+        "workExperiencetitle": "My Work Experience",
+        "workExperience": {
+            "mainJobs": [
+                {
+                    "position": "\"Heston Airlines\" Senior Crew Dispatcher",
+                    "time": "2022 May - 2025 Jun",
+                    "description": [
+                        {
+                            "name": "Tasks and Responsibilities",
+                            "descInfo": "Coordinated and monitored flight crew schedules up to 72 hours in advance, ensuring compliance with legal rest and duty time regulations. Operatively adjusted crew rosters in response to flight delays, crew sickness, or other operational changes, maintaining smooth flight operations."
+                        },
+                        {
+                            "name": "Skills and Knowledge Gained",
+                            "descInfo": "Developed strong problem-solving and decision-making skills under time pressure while working in a high-paced aviation environment. Gained in-depth knowledge of crew management systems and international aviation regulations, improving operational planning and communication abilities."
+                        }
+                    ]
+                },
+                {
+                    "position": "\"California Tapas & Wine\" Bartender - Waiter",
+                    "time": "2021 Jun - 2022 Apr",
+                    "description": [
+                        {
+                            "name": "Tasks and Responsibilities",
+                            "descInfo": "Ensuring a high level of customer experience in restaurant and bar areas by creating a pleasant and welcoming atmosphere. Efficient order management and workflow organization to ensure smooth service and adherence to quality standards."
+                        },
+                        {
+                            "name": "Skills and Knowledge Gained",
+                            "descInfo": "Learned to work efficiently in a fast-paced environment while maintaining a high standard of customer service and professional communication. Strengthened teamwork, conflict resolution, and situational management skills."
+                        }
+                    ]
+                }
+            ],
+            "otherJobsTitle": "Other work experiences",
+            "otherJobs": [
+                "“Consilia” – Assistant Worker for the Event Technical Team. Assembly and disassembly of event infrastructure (stage, lighting, sound equipment). Collaboration with the technical team to ensure events are prepared on time and run smoothly.",
+                "“S&J Projektai” – Construction and Carpentry Worker. Participation in various construction projects, performing carpentry tasks, and building frameworks. Practical experience working with construction and woodworking tools and materials, ensuring compliance with occupational safety standards.",
+                "“Utenos Mėsa” – Warehouse Worker. Product labeling tasks on the production line, applying labels and stickers to packaging. Ensured operational efficiency, precision, and strict adherence to hygiene and quality standards in the food production process."
+            ]
+        },
+        "technologiesTitle": "My Technologies & Tools",
+        "technologies": {
+            "tech1Name": "Front-end",
+            "frontend": [
+                {
+                    "name": "HTML",
+                    "icon": "bi-filetype-html"
+                },
+                {
+                    "name": "CSS",
+                    "icon": "bi-filetype-css"
+                },
+                {
+                    "name": "JavaScript",
+                    "icon": "bi-filetype-js"
+                },
+                {
+                    "name": "TypeScript",
+                    "icon": "bi-braces"
+                },
+                {
+                    "name": "React",
+                    "icon": "bi-lightning-charge"
+                },
+                {
+                    "name": "Redux",
+                    "icon": "bi-arrow-repeat"
+                },
+                {
+                    "name": "SASS",
+                    "icon": "bi-palette"
+                },
+                {
+                    "name": "Bootstrap",
+                    "icon": "bi-bootstrap"
+                }
+            ],
+            "tech2Name": "Back-end",
+            "backend": [
+                {
+                    "name": "Node.js",
+                    "icon": "bi-cpu"
+                },
+                {
+                    "name": "Express",
+                    "icon": "bi-diagram-3"
+                },
+                {
+                    "name": "MongoDB",
+                    "icon": "bi-database"
+                },
+                {
+                    "name": "Mongoose",
+                    "icon": "bi-link-45deg"
+                },
+                {
+                    "name": "REST APIs",
+                    "icon": "bi-plug"
+                },
+                {
+                    "name": "JWT",
+                    "icon": "bi-shield-check"
+                }
+            ],
+            "toolsName": "Additional Tools",
+            "tools": [
+                {
+                    "name": "Git",
+                    "icon": "bi-git"
+                },
+                {
+                    "name": "GitHub",
+                    "icon": "bi-github"
+                },
+                {
+                    "name": "Figma",
+                    "icon": "bi-vector-pen"
+                },
+                {
+                    "name": "Vite",
+                    "icon": "bi-lightning"
+                },
+                {
+                    "name": "VSCode",
+                    "icon": "bi-terminal"
+                },
+                {
+                    "name": "Postman",
+                    "icon": "bi-envelope-open"
+                },
+                {
+                    "name": "NPM",
+                    "icon": "bi-box"
+                },
+                {
+                    "name": "Webpack",
+                    "icon": "bi-gear"
+                }
+            ]
+        }
+    },
+    "projects": {
+        "title": "My Work",
+        "subtitle": "Explore my latest work and creative projects",
+        "look": "View project",
+        "projectItems": [
+            {
+                "title": "Project One",
+                "description": "A brief description of project one.",
+                "technologies": [
+                    "HTML",
+                    "CSS",
+                    "JavaScript"
+                ],
+                "image": "project.jpg",
+                "link": "https://github.com/Kurkulis/project1"
+            },
+            {
+                "title": "Project Two",
+                "description": "A brief description of project two.",
+                "technologies": [
+                    "React",
+                    "Node.js",
+                    "MongoDB"
+                ],
+                "image": "project.jpg",
+                "link": "https://github.com/Kurkulis/project2"
+            },
+            {
+                "title": "Project three",
+                "description": "A brief description of project three.",
+                "technologies": [
+                    "React",
+                    "Node.js",
+                    "MongoDB"
+                ],
+                "image": "project.jpg",
+                "link": "https://github.com/Kurkulis/project2"
+            },
+            {
+                "title": "Project four",
+                "description": "A brief description of project four.",
+                "technologies": [
+                    "React",
+                    "Node.js",
+                    "MongoDB"
+                ],
+                "image": "project.jpg",
+                "link": "https://github.com/Kurkulis/project2"
+            }
+        ]
+    },
+    "contact": {
+        "heading": "Let's get in touch",
+        "subheading": "Have an idea or a question? Let’s have a chat.",
+        "left": {
+            "title": "Contact me",
+            "email": {
+                "label": "E-mail",
+                "value": "ignas.kurkulis@gmail.com"
+            },
+            "phone": {
+                "label": "Phone Number",
+                "value": "+37061596536"
+            },
+            "social": {
+                "label": "Socials",
+                "links": [
+                    {
+                        "name": "github",
+                        "url": "https://github.com/Kurkulis",
+                        "icon": "fa-github"
+                    },
+                    {
+                        "name": "linkedin",
+                        "url": "https://www.linkedin.com/in/kurkulisignas/",
+                        "icon": "fa-linkedin"
+                    },
+                    {
+                        "name": "facebook",
+                        "url": "https://www.facebook.com/KurkulisIgnas",
+                        "icon": "fa-facebook"
+                    },
+                    {
+                        "name": "instagram",
+                        "url": "https://www.instagram.com/ignaskurkulis/",
+                        "icon": "fa-instagram"
+                    }
+                ]
+            }
+        },
+        "right": {
+            "title": "Send me a message",
+            "alertMessage": "Thank you for your message! I will get back to you as soon as possible.",
+            "alertError": "There was an error sending your message. Please try again later.",
+            "fields": [
+                {
+                    "name": "fullName",
+                    "label": "Full name",
+                    "type": "text",
+                    "placeholder": "Enter your full name"
+                },
+                {
+                    "name": "email",
+                    "label": "E-mail",
+                    "type": "email",
+                    "placeholder": "Enter your e-mail"
+                },
+                {
+                    "name": "subject",
+                    "label": "Subject",
+                    "type": "text",
+                    "placeholder": "Enter subject title"
+                },
+                {
+                    "name": "message",
+                    "label": "Message",
+                    "type": "textarea",
+                    "placeholder": "Enter your message"
+                }
+            ],
+            "button": {
+                "text": "SEND"
+            }
+        }
+    }
+}
