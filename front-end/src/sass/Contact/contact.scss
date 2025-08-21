@@ -1,17 +1,17 @@
 .contact-page {
-  background: #ddd;
+  background: #2d2d2d;
   min-height: 100vh;
   padding: 40px 0;
   .contact-heading {
     text-align: center;
-    color: #000000;
+    color: #ffffff;
     font-size: 2.5rem;
     font-weight: bold;
     margin-bottom: 40px;
   }
   .contact-subheading {
     text-align: center;
-    color: #ffffff;
+    color: #b0b0b0;
     font-size: 1.2rem;
     margin-bottom: 40px;;
   }
@@ -23,7 +23,7 @@
     margin: 0 auto;
   }
   .contact-left, .contact-right {
-    background: #555;
+    background: #404040;
     color: #fff;
     padding: 32px 24px;
     border-radius: 2px;
@@ -45,15 +45,15 @@
     gap: 24px;
   }
   .contact-block {
-    background: #f8f9fa;
-    color: #222;
+    background: #404040;
+    color: #ffffff;
     border-radius: 8px;
     padding: 20px 24px;
     margin-bottom: 16px;
-    border: 1px solid #e9ecef;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border: 1px solid #555555;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
     .contact-label {
-      color: #495057;
+      color: #b0b0b0;
       font-weight: 600;
       font-size: 1.1rem;
       display: block;
@@ -62,7 +62,7 @@
       letter-spacing: 0.5px;
     }
     .contact-value.email, .contact-value.phone {
-      color: #212529;
+      color: #ffffff;
       font-weight: 600;
       font-size: 1.1rem;
       
@@ -111,31 +111,51 @@
         color: #fff;
       }
       input, textarea {
-        background: #ddd;
-        border: none;
+        background: #c3c3c3;
+        border: 1px solid #666666;
         border-radius: 2px;
         padding: 8px 12px;
         font-size: 1rem;
-        color: #222;
+        color: #ffffff;
         resize: none;
+        &::placeholder {
+          color: #000000;
+        }
+        &:focus {
+          background: #cccccc;
+          border-color: #007bff;
+          outline: none;
+          box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+        }
       }
       textarea {
         min-height: 60px;
       }
     }
     .contact-send-btn {
-      margin: 0 auto;
-      background: #7d89fa;
-      color: #fff;
-      border: none;
-      border-radius: 2px;
-      padding: 10px 40px;
-      font-size: 1.1rem;
-      font-weight: bold;
-      cursor: pointer;
-      transition: background 0.2s;
+      background-color: #0d6efd !important;
+      border-color: #0d6efd !important;
+      color: white !important;
+      transition: all 0.3s ease;
+      
       &:hover {
-        background: #5a63c7;
+        background-color: #0b5ed7 !important;
+        border-color: #0a58ca !important;
+        transform: translateY(-2px);
+        box-shadow: 0 8px 20px rgba(13, 110, 253, 0.3);
+      }
+      
+      &:focus,
+      &:active {
+        background-color: #0a58ca !important;
+        border-color: #0a53be !important;
+        box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.25);
+      }
+      
+      &:disabled {
+        background-color: #6c757d !important;
+        border-color: #6c757d !important;
+        opacity: 0.65;
       }
     }
   }

@@ -41,16 +41,6 @@
                 "name": "linkedin",
                 "url": "https://www.linkedin.com/in/kurkulisignas/",
                 "icon": "fa-linkedin"
-            },
-            {
-                "name": "facebook",
-                "url": "https://www.facebook.com/KurkulisIgnas",
-                "icon": "fa-facebook"
-            },
-            {
-                "name": "instagram",
-                "url": "https://www.instagram.com/ignaskurkulis/",
-                "icon": "fa-instagram"
             }
         ],
         "photo": "Facetune_29-01-2023-12-29-47.JPEG"
@@ -239,19 +229,20 @@
     },
     "projects": {
         "title": "My Work",
-        "subtitle": "Explore my latest work and creative projects",
+        "subtitle": "Explore my latest work and creative projects (I’m working on some interesting projects at the moment, more details coming soon.)",
         "look": "View project",
         "projectItems": [
             {
-                "title": "Project One",
-                "description": "A brief description of project one.",
+                "title": "Portfolio Website",
+                "description": "This project was created as my final work at Vilnius Coding School, reflecting the knowledge and skills I developed during the course. It highlights my ability to combine design and functionality while building a full-stack application.",
                 "technologies": [
-                    "HTML",
-                    "CSS",
-                    "JavaScript"
+                    "MongoDB",
+                    "Express.js",
+                    "React",
+                    "Node.js"
                 ],
-                "image": "project.jpg",
-                "link": "https://github.com/Kurkulis/project1"
+                "image": "project_portfolio_photo.png",
+                "link": "https://github.com/Kurkulis/Portfolio"
             },
             {
                 "title": "Project Two",
@@ -313,16 +304,6 @@
                         "name": "linkedin",
                         "url": "https://www.linkedin.com/in/kurkulisignas/",
                         "icon": "fa-linkedin"
-                    },
-                    {
-                        "name": "facebook",
-                        "url": "https://www.facebook.com/KurkulisIgnas",
-                        "icon": "fa-facebook"
-                    },
-                    {
-                        "name": "instagram",
-                        "url": "https://www.instagram.com/ignaskurkulis/",
-                        "icon": "fa-instagram"
                     }
                 ]
             }
@@ -331,6 +312,9 @@
             "title": "Send me a message",
             "alertMessage": "Thank you for your message! I will get back to you as soon as possible.",
             "alertError": "There was an error sending your message. Please try again later.",
+            "alternativeErrors": {
+                "fields": "Please fill in all fields"
+            },
             "fields": [
                 {
                     "name": "fullName",
@@ -358,7 +342,8 @@
                 }
             ],
             "button": {
-                "text": "SEND"
+                "text": "SEND",
+                "working": "Sending..."
             }
         }
     }

@@ -120,6 +120,7 @@ export interface ContactField {
 
 export interface ContactButton {
     text: string;
+    working: string;
 }
 
 export interface ContactData {
@@ -140,6 +141,9 @@ export interface ContactData {
         button: ContactButton;
         alertMessage: string;
         errorMessage: string;
+        alternativeErrors: {
+            fields: string;
+        };
     };
 }
 

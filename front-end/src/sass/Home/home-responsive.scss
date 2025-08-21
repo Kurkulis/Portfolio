@@ -128,6 +128,8 @@
 .home-nav {
   .btn {
     transition: all 0.3s ease;
+    border: 3px solid;
+    font-weight: 600;
 
     &:hover {
       transform: translateY(-2px);
@@ -225,18 +227,18 @@
     background: linear-gradient(135deg, #007bff, #0056b3);
     border-radius: 50%;
     z-index: -1;
-    opacity: 0.1;
+    filter: brightness(1.1) contrast(1.05);
   }
 }
 
 .profile-photo {
   transition: all 0.5s ease;
   position: relative;
-  z-index: 1;
+  z-index: 2;
 
   &:hover {
 
-    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2) !important;
+    box-shadow: 0 15px 35px rgba(251, 2, 2, 0.2) !important;
   }
 }
 
@@ -291,26 +293,3 @@
   }
 }
 
-// === DARK MODE SUPPORT ===
-@media (prefers-color-scheme: dark) {
-  .home-hero {
-
-    // Keep the background image but add a darker overlay
-    &::after {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      background: rgba(0, 0, 0, 0.3);
-      pointer-events: none;
-      z-index: 1;
-    }
-  }
-
-  .home-title {
-    color: #fff !important; // Keep white text in dark mode too
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8) !important;
-  }
-}

@@ -3,7 +3,7 @@
         "title": "Ignas Kurkulis",
         "navigationItems": [
             "Pradžia",
-            "Apie",
+            "Apie mane",
             "Projektai",
             "Kontaktai"
         ]
@@ -41,16 +41,6 @@
                 "name": "linkedin",
                 "url": "https://www.linkedin.com/in/kurkulisignas/",
                 "icon": "fa-linkedin"
-            },
-            {
-                "name": "facebook",
-                "url": "https://www.facebook.com/KurkulisIgnas",
-                "icon": "fa-facebook"
-            },
-            {
-                "name": "instagram",
-                "url": "https://www.instagram.com/ignaskurkulis/",
-                "icon": "fa-instagram"
             }
         ],
         "photo": "Facetune_29-01-2023-12-29-47.JPEG"
@@ -313,17 +303,8 @@
                         "name": "linkedin",
                         "url": "https://www.linkedin.com/in/kurkulisignas/",
                         "icon": "fa-linkedin"
-                    },
-                    {
-                        "name": "facebook",
-                        "url": "https://www.facebook.com/KurkulisIgnas",
-                        "icon": "fa-facebook"
-                    },
-                    {
-                        "name": "instagram",
-                        "url": "https://www.instagram.com/ignaskurkulis/",
-                        "icon": "fa-instagram"
                     }
+                    
                 ]
             }
         },
@@ -331,6 +312,9 @@
             "title": "Parašykite man žinutę",
             "alertMessage": "Jūsų žinutė sėkmingai išsiųsta!",
             "errorMessage": "Įvyko klaida siunčiant žinutę.",
+            "alternativeErrors": {
+                "fields": "Prašome užpildyti visus laukus"
+            },
             "fields": [
                 {
                     "name": "fullName",
@@ -348,7 +332,7 @@
                     "name": "subject",
                     "label": "Tema",
                     "type": "text",
-                    "placeholder": "Įveskite temos pavadinimą"
+                    "placeholder": "Įveskite tem"
                 },
                 {
                     "name": "message",
@@ -358,7 +342,8 @@
                 }
             ],
             "button": {
-                "text": "SIŲSTI"
+                "text": "SIŲSTI",
+                "working": "Siunčiama..."
             }
         }
     }

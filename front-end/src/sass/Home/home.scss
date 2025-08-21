@@ -169,7 +169,8 @@
     object-fit: cover;
     border-radius: 18px;
     box-shadow: 0 4px 24px 0 rgba(0,0,0,0.22);
-    transition: box-shadow 0.2s;
+    transition: box-shadow 0.2s, filter 0.3s ease;
+    
 }
 
 

@@ -7,6 +7,25 @@
     background-repeat: no-repeat !important;
     background-attachment: fixed;
   min-height: 100vh;
+  
+  // Dark overlay for consistent dark mode
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7);
+    pointer-events: none;
+    z-index: 1;
+  }
+  
+  // Ensure content is above overlay
+  > * {
+    position: relative;
+    z-index: 2;
+  }
 }
 
 // === TITLE SECTION ===
@@ -14,6 +33,7 @@
   opacity: 0;
   transform: translateY(30px);
   transition: all 0.8s ease;
+  color: #ffffff !important;
   
   &.animate-in {
     opacity: 1;
@@ -40,10 +60,12 @@
 .project-card {
   transition: all 0.3s ease;
   cursor: pointer;
+  background: #2d2d2d !important;
+  border: 1px solid #404040 !important;
   
   &:hover {
     transform: translateY(-10px);
-    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15) !important;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3) !important;
     
     .project-image {
       transform: scale(1.05);
@@ -82,7 +104,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(0, 123, 255, 0.9);
+  background: #007bffe6;
   opacity: 0;
   visibility: hidden;
   transition: all 0.3s ease;
@@ -107,6 +129,7 @@
 .card-body {
   padding: 1.5rem;
   
+  
   @media (max-width: 768px) {
     padding: 1.25rem;
   }
@@ -119,6 +142,7 @@
 .card-title {
   font-weight: 600;
   
+  
   @media (max-width: 768px) {
     font-size: 1.1rem !important;
   }
@@ -126,6 +150,7 @@
 
 .card-text {
   line-height: 1.6;
+  color: #e0e0e0 !important;
   
   @media (max-width: 768px) {
     font-size: 0.9rem;
@@ -259,16 +284,4 @@
   }
 }
 
-// === DARK MODE SUPPORT ===
-@media (prefers-color-scheme: dark) {
-  
-  
-  .project-card {
-    background: #2d2d2d;
-    border-color: #404040;
-  }
-  
-  .card-text {
-    color: #ffffff;
-  }
-}
+

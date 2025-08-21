@@ -51,7 +51,7 @@ const Home = ({ homeData }: { homeData: HomeData }) => {
 
                                     {/* Language Toggle Button */}
                                     <button
-                                        className="btn btn-sm btn-outline-secondary rounded-pill"
+                                        className="btn btn-sm btn-outline-light rounded-pill"
                                         onClick={toggleLanguage}
                                         title={language === 'en' ? 'Switch to Lithuanian' : 'Perjungti į anglų kalbą'}
                                     >

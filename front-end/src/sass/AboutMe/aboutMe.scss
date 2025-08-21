@@ -78,14 +78,10 @@
   margin: 0 0 0.5rem 0 !important;
   font-size: 1.1rem;
   line-height: 1.7;
-  
-  @media (min-width: 769px) {
-    text-align: left;
-  }
+  text-align: justify;
   
   @media (max-width: 768px) {
     font-size: 1rem;
-    text-align: center;
   }
 }
 

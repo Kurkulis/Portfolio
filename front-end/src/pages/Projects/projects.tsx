@@ -85,6 +85,7 @@ const Projects = ({ projectsData }: { projectsData: ProjectsData }) => {
                                             variant="outline-primary" 
                                             size="sm"
                                             className="flex-grow-1"
+                                            href={project.link}
                                         >
                                             <i className="bi bi-github me-1"></i>
                                             Code

@@ -24,7 +24,7 @@ const Contact = ({ contactData }: { contactData: ContactData }) => {
     
     // Validacija
     if (!formData.fullName || !formData.email || !formData.subject || !formData.message) {
-        setAlertMessage('Please fill in all fields');
+        setAlertMessage(contactData.right.alternativeErrors.fields);
         setAlertVariant('danger');
         setShowAlert(true);
         setTimeout(() => setShowAlert(false), 5000);
@@ -235,7 +235,7 @@ const Contact = ({ contactData }: { contactData: ContactData }) => {
                                             disabled={isLoading}
                                         >
                                             <i className="bi bi-send-fill me-2"></i>
-                                            <span>{isLoading ? 'Sending...' : contactData.right.button.text}</span>
+                                            <span>{isLoading ? contactData.right.button.working : contactData.right.button.text}</span>
                                         </Button>
                                     </div>
                                 </Form>
