@@ -229,19 +229,20 @@
     },
     "projects": {
         "title": "Mano darbai",
-        "subtitle": "Peržiūrėkite mano naujausius darbus ir kūrybinius projektus",
+        "subtitle": "Peržiūrėkite mano naujausius darbus ir kūrybinius projektus (šiuo metu dirbu ties įdomiais projektais, daugiau detalių netrukus).",
         "look": "Peržiūrėti projektą",
         "projectItems": [
             {
-                "title": "Projektas Nr. 1",
-                "description": "Trumpas pirmojo projekto aprašymas.",
+                "title": "Portfolio svetainė",
+                "description": "Šis projektas buvo mano baigiamasis darbas Vilniaus Coding School mokykloje, atspindintis kurso metu įgytas žinias ir įgūdžius. Jis parodo mano gebėjimą derinti dizainą ir funkcionalumą kuriant pilno ciklo (full-stack) aplikaciją.",
                 "technologies": [
-                    "HTML",
-                    "CSS",
-                    "JavaScript"
+                    "MongoDB",
+                    "Express.js",
+                    "React",
+                    "Node.js"
                 ],
-                "image": "project.jpg",
-                "link": "https://github.com/Kurkulis/project1"
+                "image": "project_portfolio_photo.png",
+                "link": "https://github.com/Kurkulis/Portfolio"
             },
             {
                 "title": "Projektas Nr. 2",
@@ -304,7 +305,6 @@
                         "url": "https://www.linkedin.com/in/kurkulisignas/",
                         "icon": "fa-linkedin"
                     }
-                    
                 ]
             }
         },
@@ -332,7 +332,7 @@
                     "name": "subject",
                     "label": "Tema",
                     "type": "text",
-                    "placeholder": "Įveskite tem"
+                    "placeholder": "Įveskite temą"
                 },
                 {
                     "name": "message",

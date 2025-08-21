@@ -182,7 +182,7 @@
                     "icon": "bi-link-45deg"
                 },
                 {
-                    "name": "REST APIs",
+                    "name": "REST API",
                     "icon": "bi-plug"
                 },
                 {
@@ -311,7 +311,7 @@
         "right": {
             "title": "Send me a message",
             "alertMessage": "Thank you for your message! I will get back to you as soon as possible.",
-            "alertError": "There was an error sending your message. Please try again later.",
+            "errorMessage": "There was an error sending your message. Please try again later.",
             "alternativeErrors": {
                 "fields": "Please fill in all fields"
             },
