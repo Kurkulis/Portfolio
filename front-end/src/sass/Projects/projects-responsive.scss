@@ -6,7 +6,7 @@
     background-position: center center !important;
     background-repeat: no-repeat !important;
     background-attachment: fixed;
-  min-height: 100vh;
+  // Remove min-height: 100vh to allow dynamic height
   
   // Dark overlay for consistent dark mode
   &::before {

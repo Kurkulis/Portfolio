@@ -245,36 +245,12 @@
                 "link": "https://github.com/Kurkulis/Portfolio"
             },
             {
-                "title": "Projektas Nr. 2",
-                "description": "Trumpas antrojo projekto aprašymas.",
+                "title": "UAB \"Kigra\" svetainė",
+                "description": "Moderni svetainė įmonei, specializuojančiai stogo medžiagų ir paslaugų srityje. Daugiau informacijos netrukus...",
                 "technologies": [
-                    "React",
-                    "Node.js",
-                    "MongoDB"
+                    
                 ],
-                "image": "project.jpg",
-                "link": "https://github.com/Kurkulis/project2"
-            },
-            {
-                "title": "Projektas Nr. 3",
-                "description": "Trumpas trečiojo projekto aprašymas.",
-                "technologies": [
-                    "React",
-                    "Node.js",
-                    "MongoDB"
-                ],
-                "image": "project.jpg",
-                "link": "https://github.com/Kurkulis/project2"
-            },
-            {
-                "title": "Projektas Nr. 4",
-                "description": "Trumpas ketvirtojo projekto aprašymas.",
-                "technologies": [
-                    "React",
-                    "Node.js",
-                    "MongoDB"
-                ],
-                "image": "project.jpg",
+                "image": "Kigra.jpg",
                 "link": "https://github.com/Kurkulis/project2"
             }
         ]

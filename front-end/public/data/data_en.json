@@ -245,36 +245,12 @@
                 "link": "https://github.com/Kurkulis/Portfolio"
             },
             {
-                "title": "Project Two",
-                "description": "A brief description of project two.",
+                "title": " UAB \"Kigra\" Website ",
+                "description": "A modern website for a company specializing in roofing materials and services. More information soon...",
                 "technologies": [
-                    "React",
-                    "Node.js",
-                    "MongoDB"
+                    
                 ],
-                "image": "project.jpg",
-                "link": "https://github.com/Kurkulis/project2"
-            },
-            {
-                "title": "Project three",
-                "description": "A brief description of project three.",
-                "technologies": [
-                    "React",
-                    "Node.js",
-                    "MongoDB"
-                ],
-                "image": "project.jpg",
-                "link": "https://github.com/Kurkulis/project2"
-            },
-            {
-                "title": "Project four",
-                "description": "A brief description of project four.",
-                "technologies": [
-                    "React",
-                    "Node.js",
-                    "MongoDB"
-                ],
-                "image": "project.jpg",
+                "image": "Kigra.jpg",
                 "link": "https://github.com/Kurkulis/project2"
             }
         ]
