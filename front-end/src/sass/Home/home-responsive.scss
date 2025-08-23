@@ -6,7 +6,7 @@
 
   // Light overlay for better text readability
   &::before {
-    content: '';
+    content: "";
     position: absolute;
     top: 0;
     left: 0;
@@ -45,13 +45,13 @@
     width: 100%;
     margin: 0 auto;
   }
-  
+
   // Medium breakpoint (781px - 1199px): text below image
   @media (min-width: 781px) and (max-width: 1199px) {
     text-align: center;
     margin-top: 2rem;
   }
-  
+
   // XL breakpoint (1200px+): text on left side
   @media (min-width: 1200px) {
     text-align: left;
@@ -73,7 +73,9 @@
 }
 
 .last-name {
-  color: #0d6efd !important; // White text for better contrast with background image
+  color: var(
+    --theme-color
+  ) !important; // White text for better contrast with background image
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7) !important; // Better text shadow
 
   @media (max-width: 768px) {
@@ -84,8 +86,6 @@
     font-size: calc(2rem * 1.2) !important; // 20% larger than main name
   }
 }
-
-
 
 .home-subtitle {
   @media (max-width: 768px) {
@@ -99,6 +99,7 @@
 
 .home-greeting {
   animation: bounce 2s infinite;
+  color: var(--theme-color);
 
   @media (max-width: 768px) {
     font-size: 0.9rem;
@@ -106,7 +107,6 @@
 }
 
 @keyframes bounce {
-
   0%,
   20%,
   50%,
@@ -141,7 +141,32 @@
       padding: 0.4rem 0.8rem;
     }
   }
-  
+
+  // Override Bootstrap button classes to use theme color
+  .btn-primary {
+    background-color: var(--theme-color) !important;
+    border-color: var(--theme-color) !important;
+
+    &:hover,
+    &:focus,
+    &:active {
+      background-color: var(--theme-color) !important;
+      border-color: var(--theme-color) !important;
+      opacity: 0.9;
+    }
+  }
+
+  .btn-outline-primary {
+    color: var(--theme-color) !important;
+    border-color: var(--theme-color) !important;
+
+    &:hover,
+    &:focus {
+      background-color: var(--theme-color) !important;
+      color: white !important;
+    }
+  }
+
   // Center navigation for mobile and small tablets
   @media (max-width: 780px) {
     display: flex;
@@ -237,7 +262,6 @@
   z-index: 2;
 
   &:hover {
-
     box-shadow: 0 15px 35px rgba(251, 2, 2, 0.2) !important;
   }
 }
@@ -245,14 +269,13 @@
 // Responsive image klasės naudojamos tik kaip identifikatoriai
 // Tikrasis dydis kontroliuojamas per .home-image konteinerį
 .home-hero .home-image {
-
   .desktop-image,
   .mobile-image {
     width: 100% !important;
     height: 100% !important;
     object-fit: cover;
   }
-  
+
   // Mobile and small tablets (up to 780px)
   @media (max-width: 780px) {
     width: 300px;
@@ -261,14 +284,14 @@
     display: flex;
     justify-content: center;
   }
-  
+
   // Medium breakpoint (781px - 1199px): text below image
   @media (min-width: 781px) and (max-width: 1199px) {
     width: 400px;
     height: 480px;
     margin: 0 auto 2rem auto;
   }
-  
+
   @media (min-width: 1200px) {
     width: 500px;
     height: 600px;
@@ -280,16 +303,15 @@
   .home-hero {
     padding-top: 2rem;
     padding-bottom: 2rem;
-    
+
     .container-fluid {
       padding-left: 1rem !important;
       padding-right: 1rem !important;
     }
-    
+
     .row {
       margin: 0;
       justify-content: center;
     }
   }
 }
-

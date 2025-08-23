@@ -1,16 +1,16 @@
 // === PROJECTS RESPONSIVE STYLES ===
 
 .projects-container {
-  background-image: url('/Home/adrien-olichon-RCAhiGJsUUE-unsplash.jpg');
+  background-image: url("/Home/adrien-olichon-RCAhiGJsUUE-unsplash.jpg");
   background-size: cover !important;
-    background-position: center center !important;
-    background-repeat: no-repeat !important;
-    background-attachment: fixed;
+  background-position: center center !important;
+  background-repeat: no-repeat !important;
+  background-attachment: fixed;
   // Remove min-height: 100vh to allow dynamic height
-  
+
   // Dark overlay for consistent dark mode
   &::before {
-    content: '';
+    content: "";
     position: absolute;
     top: 0;
     left: 0;
@@ -20,7 +20,7 @@
     pointer-events: none;
     z-index: 1;
   }
-  
+
   // Ensure content is above overlay
   > * {
     position: relative;
@@ -34,16 +34,16 @@
   transform: translateY(30px);
   transition: all 0.8s ease;
   color: #ffffff !important;
-  
+
   &.animate-in {
     opacity: 1;
     transform: translateY(0);
   }
-  
+
   @media (max-width: 768px) {
     font-size: 2.5rem !important;
   }
-  
+
   @media (max-width: 480px) {
     font-size: 2rem !important;
   }
@@ -52,7 +52,7 @@
 .title-decoration {
   width: 80px;
   height: 4px;
-  background: linear-gradient(45deg, #007bff, #0056b3);
+  background: var(--theme-color);
   border-radius: 2px;
 }
 
@@ -62,15 +62,15 @@
   cursor: pointer;
   background: #2d2d2d !important;
   border: 1px solid #404040 !important;
-  
+
   &:hover {
     transform: translateY(-10px);
     box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3) !important;
-    
+
     .project-image {
       transform: scale(1.05);
     }
-    
+
     .project-overlay {
       opacity: 1;
       visibility: visible;
@@ -81,11 +81,11 @@
 .project-image-container {
   height: 200px;
   overflow: hidden;
-  
+
   @media (max-width: 768px) {
     height: 180px;
   }
-  
+
   @media (max-width: 480px) {
     height: 160px;
   }
@@ -104,7 +104,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: #007bffe6;
+  background: var(--theme-color);
   opacity: 0;
   visibility: hidden;
   transition: all 0.3s ease;
@@ -114,11 +114,11 @@
   font-weight: 600;
   transform: translateY(20px);
   transition: all 0.3s ease;
-  
+
   .project-overlay:hover & {
     transform: translateY(0);
   }
-  
+
   @media (max-width: 768px) {
     font-size: 0.9rem;
     padding: 0.5rem 1rem;
@@ -128,12 +128,11 @@
 // === CARD CONTENT ===
 .card-body {
   padding: 1.5rem;
-  
-  
+
   @media (max-width: 768px) {
     padding: 1.25rem;
   }
-  
+
   @media (max-width: 480px) {
     padding: 1rem;
   }
@@ -141,8 +140,7 @@
 
 .card-title {
   font-weight: 600;
-  
-  
+
   @media (max-width: 768px) {
     font-size: 1.1rem !important;
   }
@@ -151,7 +149,7 @@
 .card-text {
   line-height: 1.6;
   color: #e0e0e0 !important;
-  
+
   @media (max-width: 768px) {
     font-size: 0.9rem;
   }
@@ -162,12 +160,15 @@
   font-size: 0.75rem;
   font-weight: 500;
   transition: all 0.3s ease;
-  
+  background-color: rgb(0, 0, 0) !important; // White background
+  color: var(--theme-color) !important; // Theme color text
+  border: none !important; // No border
+
   &:hover {
     transform: translateY(-2px);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   }
-  
+
   @media (max-width: 768px) {
     font-size: 0.7rem;
     padding: 0.25rem 0.5rem !important;
@@ -179,15 +180,28 @@
   .btn {
     font-weight: 500;
     transition: all 0.3s ease;
-    
+
     &:hover {
       transform: translateY(-2px);
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     }
-    
+
     @media (max-width: 768px) {
       font-size: 0.85rem;
       padding: 0.4rem 0.8rem;
+    }
+  }
+
+  // Override Bootstrap's outline-primary buttons to use theme color
+  .btn-outline-primary {
+    color: var(--theme-color) !important;
+    border-color: var(--theme-color) !important;
+
+    &:hover,
+    &:focus,
+    &:active {
+      background-color: var(--theme-color) !important;
+      color: white !important;
     }
   }
 }
@@ -197,17 +211,17 @@
   font-weight: 600;
   transition: all 0.3s ease;
   border-width: 2px;
-  
+
   &:hover {
     transform: translateY(-3px);
     box-shadow: 0 8px 20px rgba(0, 123, 255, 0.3);
   }
-  
+
   @media (max-width: 768px) {
     font-size: 1rem;
     padding: 0.75rem 2rem !important;
   }
-  
+
   @media (max-width: 480px) {
     font-size: 0.9rem;
     padding: 0.6rem 1.5rem !important;
@@ -226,7 +240,7 @@
     padding-top: 2rem !important;
     padding-bottom: 2rem !important;
   }
-  
+
   .mb-5 {
     margin-bottom: 2rem !important;
   }
@@ -237,7 +251,7 @@
     padding-top: 1rem !important;
     padding-bottom: 1rem !important;
   }
-  
+
   .g-4 {
     --bs-gutter-x: 0.75rem;
     --bs-gutter-y: 0.75rem;
@@ -283,5 +297,3 @@
     background-position: -200% 0;
   }
 }
-
-

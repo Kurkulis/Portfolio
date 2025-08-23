@@ -71,16 +71,16 @@
         }
 
         &.active {
-          color: #007bff !important;
+          color: var(--theme-color) !important;
 
           &::after {
-            content: '';
+            content: "";
             position: absolute;
             bottom: 0;
             left: 0;
             right: 0;
             height: 2px;
-            background: #007bff;
+            background: var(--theme-color);
           }
         }
 
@@ -121,7 +121,7 @@
 
       &::before,
       &::after {
-        content: '';
+        content: "";
         position: absolute;
         left: 0;
         width: 100%;
@@ -191,10 +191,18 @@
           opacity: 0;
           transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 
-          &:nth-child(1) { transition-delay: 0.1s; }
-          &:nth-child(2) { transition-delay: 0.15s; }
-          &:nth-child(3) { transition-delay: 0.2s; }
-          &:nth-child(4) { transition-delay: 0.25s; }
+          &:nth-child(1) {
+            transition-delay: 0.1s;
+          }
+          &:nth-child(2) {
+            transition-delay: 0.15s;
+          }
+          &:nth-child(3) {
+            transition-delay: 0.2s;
+          }
+          &:nth-child(4) {
+            transition-delay: 0.25s;
+          }
 
           .nav-link {
             display: block !important;
@@ -224,6 +232,15 @@
         }
       }
 
+      // Style the buttons container in mobile view
+      .navbar-nav.ms-auto {
+        flex-direction: row !important;
+        justify-content: center !important;
+        gap: 10px !important;
+        margin-top: 15px !important;
+        width: 100% !important;
+      }
+
       &.show .nav-item {
         transform: translateY(0);
         opacity: 1;
@@ -241,16 +258,16 @@
     .navbar-expand-custom .navbar-nav {
       flex-direction: row !important;
     }
-    
+
     .navbar-expand-custom .navbar-nav .nav-link {
       padding-right: 0.5rem;
       padding-left: 0.5rem;
     }
-    
+
     .navbar-expand-custom .navbar-toggler {
       display: none !important;
     }
-    
+
     .navbar-expand-custom .navbar-collapse {
       display: flex !important;
       flex-basis: auto;
@@ -261,7 +278,7 @@
     .navbar-expand-custom .navbar-toggler {
       display: block !important;
     }
-    
+
     .navbar-expand-custom .navbar-collapse:not(.show) {
       display: none;
     }
@@ -282,7 +299,7 @@
 
 /* Custom hamburger button with animation */
 .custom-toggler {
-  border: 1px solid rgba(0,0,0,.1) !important;
+  border: 1px solid rgba(0, 0, 0, 0.1) !important;
   background: transparent !important;
   background-image: none !important;
   padding: 4px 8px !important;
@@ -294,37 +311,37 @@
   align-items: center;
   gap: 4px;
   border-radius: 4px;
-  
+
   &:focus {
     box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25) !important;
     outline: none !important;
   }
-  
+
   &:hover {
-    background: rgba(0,0,0,.05) !important;
+    background: rgba(0, 0, 0, 0.05) !important;
   }
-  
+
   .hamburger-line {
     width: 20px;
     height: 2px;
-    background-color: rgba(0,0,0,.75);
+    background-color: rgba(0, 0, 0, 0.75);
     transition: all 0.3s ease;
     display: block;
     border-radius: 1px;
     position: relative;
   }
-  
+
   /* Animation when active (menu open) - X shape */
   &.active {
     .hamburger-line:nth-child(1) {
       transform: translateY(6px) rotate(45deg);
     }
-    
+
     .hamburger-line:nth-child(2) {
       opacity: 0;
       transform: scale(0);
     }
-    
+
     .hamburger-line:nth-child(3) {
       transform: translateY(-6px) rotate(-45deg);
     }
@@ -344,34 +361,34 @@
     .navbar-nav {
       flex-direction: column !important;
     }
-    
+
     .navbar-toggler {
       display: flex !important;
     }
-    
+
     .navbar-collapse:not(.show) {
       display: none !important;
     }
-    
+
     .navbar-collapse.show {
       display: block !important;
     }
   }
-  
+
   @media (min-width: 801px) {
     .navbar-nav {
       flex-direction: row !important;
     }
-    
+
     .navbar-nav .nav-link {
       padding-right: 0.5rem;
       padding-left: 0.5rem;
     }
-    
+
     .navbar-toggler {
       display: none !important;
     }
-    
+
     .navbar-collapse {
       display: flex !important;
       flex-basis: auto;
@@ -382,9 +399,9 @@
 /* Additional navbar styles */
 .custom-navbar {
   transition: all 0.3s ease;
-  
+
   &.navbar-visible {
-    background-color: rgba(255, 255, 255, 1) !important;
+    background-color: #ffffff !important;
     backdrop-filter: blur(10px);
   }
 }
@@ -392,13 +409,62 @@
 /* Navigation link styles */
 .nav-link {
   cursor: pointer;
-  
+
   &.active {
-    color: #0d6efd !important;
+    color: var(--theme-color) !important;
     font-weight: 600;
   }
-  
+
   &:hover {
-    color: #0d6efd !important;
+    color: var(--theme-color) !important;
   }
+}
+
+/* Language button styling */
+.language-toggle-btn {
+  margin-right: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px 12px;
+  background-color: var(--theme-color);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+
+  &:hover {
+    opacity: 0.9;
+  }
+
+  &:active {
+    transform: scale(0.98);
+  }
+}
+
+/* Remove the old language button styling */
+.btn-outline-primary.language-toggle-btn {
+  display: none;
+}
+
+/* Ensure navbar buttons are consistently styled with theme changes */
+.theme-changer-button {
+  background-color: var(--theme-color);
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+
+  &:hover {
+    opacity: 0.9;
+  }
+  i {
+    margin-right: 5px;
+  }
+}
+
+.navbar-nav.ms-auto .btn {
+  transition: all 0.3s ease;
 }

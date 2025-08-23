@@ -1,7 +1,7 @@
 // === CONTACT RESPONSIVE STYLES ===
 
 .contact-page {
-  background-image: url('/Home/adrien-olichon-RCAhiGJsUUE-unsplash.jpg');
+  background-image: url("/Home/adrien-olichon-RCAhiGJsUUE-unsplash.jpg");
   background-size: cover !important;
   background-position: center center !important;
   background-repeat: no-repeat !important;
@@ -45,13 +45,13 @@
   background: rgba(45, 45, 45, 0.95);
   backdrop-filter: blur(15px);
   border: 1px solid rgba(64, 64, 64, 0.5);
-  
+
   &:hover {
     transform: translateY(-8px);
     box-shadow: 0 25px 50px rgba(0, 0, 0, 0.4) !important;
-    border-color: rgba(0, 123, 255, 0.5);
+    border-color: rgba(255, 255, 255, 0.5);
   }
-  
+
   @media (max-width: 768px) {
     margin-bottom: 2rem;
   }
@@ -59,23 +59,23 @@
 
 .contact-form-card {
   position: relative;
-  
+
   &::before {
-    content: '';
+    content: "";
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     height: 4px;
-    background: linear-gradient(90deg, #007bff, #0056b3, #004085);
+    background: var(--theme-color);
     border-radius: 0.375rem 0.375rem 0 0;
   }
-  
+
   .card-body {
     position: relative;
     z-index: 1;
   }
-}// === CONTACT INFO ===
+} // === CONTACT INFO ===
 .contact-icon {
   width: 50px;
   height: 50px;
@@ -89,10 +89,10 @@
   position: relative;
   overflow: hidden;
   flex-shrink: 0;
-  background-color: #0d6efd !important;
+  background-color: var(--theme-color) !important;
 
   &::before {
-    content: '';
+    content: "";
     position: absolute;
     top: 0;
     left: 0;
@@ -149,21 +149,26 @@
   overflow: hidden;
 
   &::before {
-    content: '';
+    content: "";
     position: absolute;
     top: 0;
     left: -100%;
     width: 100%;
     height: 100%;
-    background: linear-gradient(90deg, transparent, rgba(0, 123, 255, 0.1), transparent);
+    background: linear-gradient(
+      90deg,
+      transparent,
+      rgba(255, 255, 255, 0.1),
+      transparent
+    );
     transition: left 0.6s ease;
   }
 
   &:hover {
     background: rgba(112, 112, 112, 0.9);
-    border-color: rgba(0, 123, 255, 0.7);
+    border-color: var(--theme-color);
     transform: translateY(-3px);
-    box-shadow: 0 8px 25px rgba(0, 123, 255, 0.3);
+    box-shadow: 0 8px 25px rgba(255, 255, 255, 0.3);
 
     &::before {
       left: 100%;
@@ -171,15 +176,15 @@
 
     .contact-icon {
       transform: scale(1.1) rotate(5deg);
-      box-shadow: 0 5px 15px rgba(0, 123, 255, 0.4);
+      box-shadow: 0 5px 15px rgba(255, 255, 255, 0.4);
     }
 
     .contact-label {
-      color: #4da6ff;
+      color: var(--theme-color);
     }
 
     .contact-value a {
-      color: #4da6ff !important;
+      color: var(--theme-color) !important;
     }
   }
 
@@ -276,18 +281,18 @@
     color: #ffffff;
 
     &::after {
-      content: '';
+      content: "";
       position: absolute;
       bottom: 0;
       left: 0;
       width: 0;
       height: 2px;
-      background: linear-gradient(45deg, #007bff, #0056b3);
+      background: var(--theme-color);
       transition: width 0.3s ease;
     }
 
     &:hover {
-      color: #4da6ff !important;
+      color: var(--theme-color) !important;
       transform: translateX(3px);
 
       &::after {
@@ -310,7 +315,7 @@
 
   @media (max-width: 1000px) {
     font-size: 0.85rem;
-    
+
     a {
       word-break: break-all;
       line-height: 1.4;
@@ -319,7 +324,7 @@
 
   @media (max-width: 992px) {
     font-size: 0.8rem !important;
-    
+
     a {
       font-size: 0.8rem !important;
       word-break: break-all;
@@ -329,7 +334,7 @@
 
   @media (max-width: 768px) {
     font-size: 0.85rem !important;
-    
+
     a {
       font-size: 0.85rem !important;
     }
@@ -337,7 +342,7 @@
 
   @media (max-width: 600px) {
     font-size: 0.8rem !important;
-    
+
     a {
       font-size: 0.8rem !important;
       word-break: break-all;
@@ -347,7 +352,7 @@
 
   @media (max-width: 480px) {
     font-size: 0.75rem !important;
-    
+
     a {
       font-size: 0.75rem !important;
       word-break: break-all;
@@ -358,7 +363,7 @@
   // Special rules for email text on narrow screens
   @media (max-width: 430px) {
     font-size: 0.7rem !important;
-    
+
     a {
       font-size: 0.7rem !important;
       word-break: break-all;
@@ -368,7 +373,7 @@
 
   @media (max-width: 380px) {
     font-size: 0.65rem !important;
-    
+
     a {
       font-size: 0.65rem !important;
       word-break: break-all;
@@ -378,7 +383,7 @@
 
   @media (max-width: 340px) {
     font-size: 0.6rem !important;
-    
+
     a {
       font-size: 0.6rem !important;
       word-break: break-all;
@@ -423,18 +428,18 @@
   transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
   position: relative;
   overflow: hidden;
-  border: 2px solid rgba(0, 123, 255, 0.2);
+  border: 2px solid rgba(255, 255, 255, 0.2);
   background: rgba(0, 123, 255, 0.1);
   flex-shrink: 0;
 
   &::before {
-    content: '';
+    content: "";
     position: absolute;
     top: 50%;
     left: 50%;
     width: 0;
     height: 0;
-    background: rgba(0, 123, 255, 0.2);
+    background: rgba(255, 255, 255, 0.2);
     border-radius: 50%;
     transition: all 0.4s ease;
     transform: translate(-50%, -50%);
@@ -442,9 +447,9 @@
 
   &:hover {
     transform: translateY(-8px) scale(1.05);
-    box-shadow: 0 12px 30px rgba(0, 123, 255, 0.4);
-    border-color: #007bff;
-    background: rgba(0, 123, 255, 0.2);
+    box-shadow: 0 12px 30px rgba(255, 255, 255, 0.4);
+    border-color: var(--theme-color);
+    background: rgba(255, 255, 255, 0.2);
 
     &::before {
       width: 100px;
@@ -469,7 +474,7 @@
     height: 45px !important;
     min-width: 45px !important;
     min-height: 45px !important;
-    
+
     i {
       font-size: 1.1rem !important;
     }
@@ -480,7 +485,7 @@
     height: 42px !important;
     min-width: 42px !important;
     min-height: 42px !important;
-    
+
     i {
       font-size: 1rem !important;
     }
@@ -493,7 +498,7 @@
     min-width: 32px !important;
     min-height: 32px !important;
     border-width: 1px !important;
-    
+
     i {
       font-size: 0.8rem !important;
     }
@@ -504,7 +509,7 @@
     height: 40px !important;
     min-width: 40px !important;
     min-height: 40px !important;
-    
+
     i {
       font-size: 1rem !important;
     }
@@ -513,7 +518,7 @@
   @media (max-width: 768px) {
     width: 42px !important;
     height: 42px !important;
-    
+
     i {
       font-size: 1rem !important;
     }
@@ -522,7 +527,7 @@
   @media (max-width: 480px) {
     width: 38px;
     height: 38px;
-    
+
     i {
       font-size: 0.9rem;
     }
@@ -531,7 +536,7 @@
   @media (max-width: 360px) {
     width: 35px;
     height: 35px;
-    
+
     i {
       font-size: 0.85rem;
     }
@@ -623,16 +628,16 @@
   .form-group {
     margin-bottom: 2rem;
     position: relative;
-    
+
     @media (max-width: 768px) {
       margin-bottom: 1.75rem;
     }
-    
+
     @media (max-width: 480px) {
       margin-bottom: 1.5rem;
     }
   }
-  
+
   .form-label {
     font-size: 1rem;
     font-weight: 600;
@@ -641,27 +646,27 @@
     text-transform: uppercase;
     letter-spacing: 0.5px;
     position: relative;
-    
+
     &::after {
-      content: '';
+      content: "";
       position: absolute;
       bottom: -4px;
       left: 0;
       width: 30px;
       height: 2px;
-      background: linear-gradient(45deg, #007bff, #0056b3);
+      background: var(--theme-color);
       border-radius: 1px;
     }
-    
+
     @media (max-width: 768px) {
       font-size: 0.9rem;
     }
-    
+
     @media (max-width: 480px) {
       font-size: 0.85rem;
     }
   }
-  
+
   .form-control {
     border: 2px solid #666666;
     border-radius: 12px;
@@ -673,50 +678,50 @@
     backdrop-filter: blur(10px);
     position: relative;
     color: #ffffff;
-    
+
     &:focus {
-      border-color: #007bff;
-      box-shadow: 0 0 0 0.25rem rgba(0, 123, 255, 0.25), 
-                  0 8px 25px rgba(0, 123, 255, 0.2);
+      border-color: var(--theme-color);
+      box-shadow: 0 0 0 0.25rem rgba(0, 123, 255, 0.25),
+        0 8px 25px rgba(0, 123, 255, 0.2);
       background: rgba(112, 112, 112, 0.95);
       transform: translateY(-2px);
       outline: none;
     }
-    
+
     &::placeholder {
       color: #c0c0c0;
       opacity: 0.9;
       font-weight: 400;
       transition: all 0.3s ease;
     }
-    
+
     &:focus::placeholder {
       opacity: 0.6;
       transform: translateX(5px);
     }
-    
+
     @media (max-width: 768px) {
       font-size: 0.95rem;
       padding: 0.85rem 1.1rem;
       border-radius: 10px;
     }
-    
+
     @media (max-width: 480px) {
       font-size: 0.9rem;
       padding: 0.75rem 1rem;
       border-radius: 8px;
     }
   }
-  
+
   textarea.form-control {
     resize: vertical;
     min-height: 140px;
     line-height: 1.6;
-    
+
     @media (max-width: 768px) {
       min-height: 120px;
     }
-    
+
     @media (max-width: 480px) {
       min-height: 100px;
     }
@@ -733,10 +738,10 @@
   transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
   position: relative;
   overflow: hidden;
-  box-shadow: 0 8px 20px rgba(0, 123, 255, 0.3);
-  
+  box-shadow: 0 8px 20px #ffffff4d;
+
   &::before {
-    content: '';
+    content: "";
     position: absolute;
     top: 0;
     left: -100%;
@@ -744,9 +749,9 @@
     height: 100%;
     transition: left 0.6s ease;
   }
-  
+
   &::after {
-    content: '';
+    content: "";
     position: absolute;
     top: 50%;
     left: 50%;
@@ -757,47 +762,47 @@
     transform: translate(-50%, -50%);
     transition: all 0.4s ease;
   }
-  
+
   &:hover {
     transform: translateY(-5px) scale(1.05);
-    box-shadow: 0 15px 35px rgba(0, 123, 255, 0.5);
-    background: linear-gradient(135deg, #0056b3 0%, #004085 50%, #003366 100%);
-    
+    box-shadow: 0 15px 35px rgba(255, 255, 255, 0.5);
+    background: var(--theme-color);
+
     &::before {
       left: 100%;
     }
-    
+
     &::after {
       width: 300px;
       height: 300px;
     }
-    
+
     i {
       transform: translateX(3px);
     }
   }
-  
+
   &:active {
     transform: translateY(-2px) scale(1.02);
-    box-shadow: 0 8px 20px rgba(0, 123, 255, 0.4);
+    box-shadow: 0 8px 20px rgba(255, 255, 255, 0.4);
   }
-  
+
   i {
     transition: all 0.3s ease;
     position: relative;
     z-index: 2;
   }
-  
+
   span {
     position: relative;
     z-index: 2;
   }
-  
+
   @media (max-width: 768px) {
     font-size: 1rem;
     padding: 0.85rem 2.5rem !important;
   }
-  
+
   @media (max-width: 480px) {
     font-size: 0.95rem;
     padding: 0.75rem 2rem !important;
@@ -919,18 +924,23 @@
   animation: slideInDown 0.5s ease, pulse 2s infinite;
   position: relative;
   overflow: hidden;
-  
+
   &::before {
-    content: '';
+    content: "";
     position: absolute;
     top: 0;
     left: -100%;
     width: 100%;
     height: 100%;
-    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+    background: linear-gradient(
+      90deg,
+      transparent,
+      rgba(255, 255, 255, 0.3),
+      transparent
+    );
     animation: shimmer 2s infinite;
   }
-  
+
   i {
     color: #28a745;
     font-size: 1.2rem;
@@ -950,7 +960,8 @@
 }
 
 @keyframes pulse {
-  0%, 100% {
+  0%,
+  100% {
     box-shadow: 0 0 0 0 rgba(40, 167, 69, 0.3);
   }
   50% {
@@ -968,7 +979,11 @@
 }
 
 @keyframes bounce {
-  0%, 20%, 50%, 80%, 100% {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
     transform: translateY(0);
   }
   40% {
